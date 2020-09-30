@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtParagraph"
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:autofillHints="Serch Text"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/txtSerchWord"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="30dp"
+        android:hint="seach word"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnSerch"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="95dp"
+        android:layout_marginTop="60dp"
+        android:text="Serch"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/your_word"
+        android:textAlignment="center"
+        android:textColor="#00f"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtParagraph" />
+
+</LinearLayout>
